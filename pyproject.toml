@@ -1,0 +1,13 @@
+[project]
+name = "folder-mirror"
+description = "Simple single folder to folder one-way syncing utility"
+authors = [{name = "Ivan Sadílek", email = "sadilekivan@gmail.com"}]
+version = "0.1.0"
+readme = "README.md"
+
+requires-python = ">=3.9"
+
+dependencies = [
+    "typer >= 0.15.1",
+    "human-readable >= 2.0.0"
+]
