@@ -2,11 +2,11 @@
 
 This program is designed to sync files, including removal.
 
-To prevent possible data loss at mirror (In case mirror is carelessly selected with already importnant other data that wont be in source), this program requires it's own mirror folder with predefined structure.
+To prevent possible data loss at the `mirror` path (In case `mirror` is carelessly selected with already importnant other data that wont be in source), this program requires it's own mirror folder with predefined structure.
 
-A folder mirror can be initialized at a non-existing path with existing parent path. When initializing a mirror you need both a `source` to synchronize to mirror and a `mirror` path where to initialize the mirror.
+A `mirror` folder can be initialized at a non-existing path (needs to have a parent). When initializing a mirror you need both a `source` to synchronize to mirror and a `mirror` path where to initialize the mirror.
 
-If you already have a initialized `mirror` you can just sync source to it by specifing it's path.
+If you already have a initialized `mirror` folder you can just sync source to it by specifing it's path (`mirror` folder remembers it's `source`).
 
 ## folder-mirror structure
 The `mirror` root path will have the following structure:
