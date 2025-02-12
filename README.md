@@ -1,4 +1,5 @@
 # folder-mirror
+## Description
 
 This program is designed to sync files, including removal.
 
@@ -8,7 +9,7 @@ A `mirror` folder can be initialized at a non-existing path (needs to have a par
 
 If you already have a initialized `mirror` folder you can just sync source to it by specifing it's path (`mirror` folder remembers it's `source`).
 
-## folder-mirror structure
+## `mirror` folder structure
 The `mirror` root path will have the following structure:
 
 ```
