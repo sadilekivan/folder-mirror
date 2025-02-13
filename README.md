@@ -25,8 +25,8 @@ To test out this folder-mirror program please initialize a `mirror` and then syn
 
 ```bash
 ~\folder-mirror>
-py -m src.folder-mirror init dummy_source mirror --log-level debug
-py -m src.folder-mirror sync mirror --sync-interval 3 --log-level debug --log-path dummy_source/folder-mirror.log
+py -m src.folder_mirror init dummy_env/original dummy_env/mirror --log-level debug
+py -m src.folder_mirror sync dummy_env/mirror --sync-interval 3 --log-level debug --log-path dummy_env/original/folder_mirror.log
 ```
 
 Notice how intial data and any changes are copied together with the update of the log. You can leave it running for a while to see how sync handles the growing log file.
@@ -44,8 +44,8 @@ And then run the package from anywhere with:
 
 ```shell
 ~\folder-mirror>
-py -m folder-mirror init dummy_source mirror --log-level debug
-py -m folder-mirror sync mirror --sync-interval 3 --log-level debug --log-path dummy_source/folder-mirror.log
+py -m folder_mirror init dummy_env/original dummy_env/mirror --log-level debug
+py -m folder_mirror sync dummy_env/mirror --sync-interval 3 --log-level debug --log-path dummy_env/original/folder_mirror.log
 ```
 
 ## Dependencies
